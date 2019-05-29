@@ -19,7 +19,7 @@ server.on('request', (req, res) => {
             `<html><head><title>Operating System Info</title></head>
             <body><h1>Operating System Info</h1>
             <table>
-            <tr><th>TMP Dir</th><td>${os.tmpDir()}</td></tr>
+            <tr><th>TMP Dir</th><td>${os.tmpdir()}</td></tr>
             <tr><th>Host Name</th><td>${os.hostname()}</td></tr>
             <tr><th>OS Type</th><td>${os.type()} ${os.platform()} ${os.arch()} ${os.release()}</td></tr>
             <tr><th>How long this bitch been goin?</th><td>${os.uptime()} ${util.inspect(os.loadavg())}</td></tr>
